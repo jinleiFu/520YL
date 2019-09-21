@@ -1,8 +1,12 @@
 .ZhiMangXing {
-  font-family: 'Zhi Mang Xing', cursive;
+  font-family: 'ZhiMangXing';
 }
 .MaShanZheng {
   font-family: 'Ma Shan Zheng', cursive;
+}
+@font-face {
+  font-family: 'ZhiMangXing';
+  src: url('../fonts/ZhiMangXing-Regular.ttf') format("opentype");
 }
 * {
   -webkit-tap-highlight-color: transparent;
