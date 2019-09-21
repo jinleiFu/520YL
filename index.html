@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>媳妇俺爱你</title>
+
+  <!-- 不要删除或改变下面这行代码 -->
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/46719/5d244858f629d80e741cb75e.css'
+    rel='stylesheet' type='text/css' />
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244a04f629d80e741cb75f.css'
+    rel='stylesheet' type='text/css' />
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244b03f629d80e741cb760.css'
+    rel='stylesheet' type='text/css' />
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e04f629d80e741cb768.css'
+    rel='stylesheet' type='text/css' />
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e3cf629d80e741cb769.css'
+    rel='stylesheet' type='text/css' />
+  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e68f629d80e741cb76a.css'
+    rel='stylesheet' type='text/css' />
+  <!-- begin REM Zoom 计算 -->
+  <script type="text/javascript">
+    (function (win) {
+      var remCalc = {};
+      var docEl = win.document.documentElement,
+        tid,
+        hasRem = true,
+        hasZoom = true,
+        zoomRuler = 'width',
+        designWidth = 750,
+        designHeight = 1334;
+
+      function refresh() {
+        var width = docEl.clientWidth;
+        var height = docEl.clientHeight;
+        if (width > 768) width = 768;
+        if (hasRem) {
+          var rem = width / 10;
+          docEl.style.fontSize = rem + "px";
+          remCalc.rem = rem;
+          var actualSize = parseFloat(window.getComputedStyle(document.documentElement)["font-size"]);
+          if (actualSize !== rem && actualSize > 0 && Math.abs(actualSize - rem) > 1) {
+            var remScaled = rem * rem / actualSize;
+            docEl.style.fontSize = remScaled + "px";
+          }
+        }
+        if (hasZoom) {
+          var style = document.getElementById('J__style');
+          if (!style) {
+            style = document.createElement('style');
+            style.id = 'J__style';
+          }
+          var r, s;
+          if (zoomRuler === 'height') {
+            r = height / designHeight;
+          } else {
+            r = width / designWidth;
+          }
+          r.toFixed && (r = r.toFixed(5));
+          s = '.__z{zoom:' + r + '} ';
+          s += '.__s{-webkit-transform: scale(' + r + ');transform: scale(' + r + ')}';
+
+          style.innerHTML = s;
+          document.getElementsByTagName('head')[0].appendChild(style);
+        }
+      }
+
+      function dbcRefresh() {
+        clearTimeout(tid);
+        tid = setTimeout(refresh, 100)
+      }
+      win.addEventListener("resize", function () {
+        dbcRefresh()
+      }, false);
+
+      win.addEventListener("pageshow", function (e) {
+        if (e.persisted) {
+          dbcRefresh();
+        }
+      }, false);
+      refresh();
+      if (hasRem) {
+        remCalc.refresh = refresh;
+        remCalc.rem2px = function (d) {
+          var val = parseFloat(d) * this.rem;
+          if (typeof d === "string" && d.match(/rem$/)) {
+            val += "px";
+          }
+          return val;
+        };
+        remCalc.px2rem = function (d) {
+          var val = parseFloat(d) / this.rem;
+          if (typeof d === "string" && d.match(/px$/)) {
+            val += "rem";
+          }
+          return val;
+        };
+        win.remCalc = remCalc;
+      }
+    })(window);
+
+  </script>
+  <!-- end REM Zoom 计算 -->
+  <link href="./css/app.css?v=5.20" rel="stylesheet">
+</head>
+
+<body>
+  <!-- S loading 动画，对应的样式在 src/css/loading.scss -->
+  <div id="o2_loading" class="loading">
+    <div class="inner">
+      <i class="before"></i>
+      <i class="after"></i>
+    </div>
+    <div class="text">loading</div>
+  </div>
+  <!-- E loading -->
+  <!-- S 主体内容 -->
+  <div id="o2_main" class="main hide">
+    <div class="swiper-container" id="o2_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="tips css1a7ae3e0eb1f957">亲爱滴媳妇儿请往上滑</p>
+          <div class="container">
+            <div class="egg">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div class="face">
+                  <div class="eyes"></div>
+                  <div class="smile"></div>
+                  <div class="cheeks"></div>
+                  <div class="shine"></div>
+                </div>
+              </ul>
+            </div>
+            <div class="shadow" id="egg-shadow"></div>
+            <div class="heart">
+              <div class="light"></div>
+            </div>
+            <div class="ghost">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="face">
+                <div class="eyes"></div>
+                <div class="smile"></div>
+                <div class="cheeks"></div>
+              </div>
+            </div>
+            <div class="shadow" id="ghost-shadow"></div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="heart">
+          <p class="css1a7aea68f81f957 top">每个字都代表着我对你浓浓的爱意</p>
+          <div class="love" id="love-heart"></div>
+          <p class="css1a7aee4d7c1f957 bottom">媳妇俺爱你</p>
+        </div>
+        <div class="swiper-slide">
+          <canvas id="love-canvas"></canvas>
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <!-- 外层最大容器 -->
+          <div class="wrap">
+            <!--包裹所有元素的容器-->
+            <div class="cube">
+              <!--前面图片 -->
+              <div class="out_front">
+                <img src="./img/hands1.png" class="pic" data-preload />
+              </div>
+              <!--后面图片 -->
+              <div class="out_back">
+                <img src="./img/hands2.png" class="pic" data-preload />
+              </div>
+              <!--左面图片 -->
+              <div class="out_left">
+                <img src="./img/boy.png" class="pic" data-preload />
+              </div>
+              <!--右面图片 -->
+              <div class="out_right">
+                <img src="./img/girl.png" class="pic" data-preload />
+              </div>
+              <!--上面图片 -->
+              <div class="out_top">
+                <img src="./img/hands-in-hands.png" class="pic" data-preload />
+              </div>
+              <!--下面图片 -->
+              <div class="out_bottom">
+                <img src="./img/meet.png" class="pic" data-preload />
+              </div>
+            </div>
+          </div>
+          <div id="mainDiv">
+            <div id="content">
+              <div id="loveHeart">
+                <div id="words">
+                  <div id="messages">
+                    <p class="css1a7afa0aa71f957">
+                      媳妇儿,这是我们相爱在一起的时光
+                      <!-- <span>媳</span>
+                      <span>妇</span>
+                      <span>,</span>
+                      <span>这</span>
+                      <span>是</span>
+                      <span>我</span>
+                      <span>们</span>
+                      <span>相</span>
+                      <span>爱</span>
+                      <span>在</span>
+                      <span>一</span>
+                      <span>起</span>
+                      <span>的</span>
+                      <span>时</span>
+                      <span>光</span> -->
+                    </p>
+                    <div id="elapseClock"></div>
+                  </div>
+                  <div id="loveu" class="css1a7afae6321f957">
+                    爱你直到永永远远。<br />
+                    <div class="signature css1a7afb8fc01f957">- 付先生</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./img/520.png" alt="520" style="display: none" data-preload>
+    <audio src="./mp3/lovesong.mp3" id="music" autoplay></audio>
+  </div>
+  <!-- E 主体内容 -->
+  <script>
+    // 初始化时间
+    var together = new Date()
+    together.setFullYear(2019, 3, 1)
+    together.setHours(0)
+    together.setMinutes(0)
+    together.setSeconds(0)
+    together.setMilliseconds(0)
+    timeElapse(together)
+    setInterval(function () {
+      timeElapse(together);
+    }, 1000);
+    // $('#messages').fadeIn(5000, function () {
+    //   // showLoveU();
+    // });
+    function timeElapse(date) {
+      var current = new Date();
+      var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+      var days = Math.floor(seconds / (3600 * 24) + 30);
+      seconds = seconds % (3600 * 24);
+      var hours = Math.floor(seconds / 3600);
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      seconds = seconds % 3600;
+      var minutes = Math.floor(seconds / 60);
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      seconds = seconds % 60;
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds";
+      $("#elapseClock").html(result);
+    }
+  </script>
+  <script type="text/javascript" src="./js/bundle.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <!-- 音乐控制脚本 -->
+  <script>
+    // document.getElementById('music').play()
+    document.addEventListener("WeixinJSBridgeReady", function () {
+      document.getElementById('music').play()
+    }, false)
+  </script>
+</body>
+
+</html>
