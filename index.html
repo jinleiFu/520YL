@@ -11,18 +11,7 @@
   <!-- 不要删除或改变下面这行代码 -->
 
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/46719/5d244858f629d80e741cb75e.css'
-    rel='stylesheet' type='text/css' />
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244a04f629d80e741cb75f.css'
-    rel='stylesheet' type='text/css' />
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244b03f629d80e741cb760.css'
-    rel='stylesheet' type='text/css' />
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e04f629d80e741cb768.css'
-    rel='stylesheet' type='text/css' />
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e3cf629d80e741cb769.css'
-    rel='stylesheet' type='text/css' />
-  <link href='http://cdn.repository.webfont.com/webfonts/nomal/129367/45904/5d244e68f629d80e741cb76a.css'
-    rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Zhi+Mang+Xing&display=swap" rel="stylesheet">
   <!-- begin REM Zoom 计算 -->
   <script type="text/javascript">
     (function (win) {
@@ -124,7 +113,7 @@
     <div class="swiper-container" id="o2_swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <p class="tips css1a7ae3e0eb1f957">亲爱滴媳妇儿请往上滑</p>
+          <p class="tips MaShanZheng">亲爱滴媳妇儿请往上滑</p>
           <div class="container">
             <div class="egg">
               <ul>
@@ -169,9 +158,9 @@
           </div>
         </div>
         <div class="swiper-slide" id="heart">
-          <p class="css1a7aea68f81f957 top">每个字都代表着我对你浓浓的爱意</p>
+          <p class="MaShanZheng top">每个字都代表着我对你浓浓的爱意</p>
           <div class="love" id="love-heart"></div>
-          <p class="css1a7aee4d7c1f957 bottom">媳妇俺爱你</p>
+          <p class="MaShanZheng bottom">媳妇俺爱你</p>
         </div>
         <div class="swiper-slide">
           <canvas id="love-canvas"></canvas>
@@ -211,31 +200,16 @@
           <div id="mainDiv">
             <div id="content">
               <div id="loveHeart">
-                <div id="words">
+                <div id="words" class="ZhiMangXing">
                   <div id="messages">
-                    <p class="css1a7afa0aa71f957">
+                    <p>
                       媳妇儿,这是我们相爱在一起的时光
-                      <!-- <span>媳</span>
-                      <span>妇</span>
-                      <span>,</span>
-                      <span>这</span>
-                      <span>是</span>
-                      <span>我</span>
-                      <span>们</span>
-                      <span>相</span>
-                      <span>爱</span>
-                      <span>在</span>
-                      <span>一</span>
-                      <span>起</span>
-                      <span>的</span>
-                      <span>时</span>
-                      <span>光</span> -->
                     </p>
                     <div id="elapseClock"></div>
                   </div>
-                  <div id="loveu" class="css1a7afae6321f957">
+                  <div id="loveu">
                     爱你直到永永远远。<br />
-                    <div class="signature css1a7afb8fc01f957">- 付先生</div>
+                    <div class="signature">- 付先生</div>
                   </div>
                 </div>
               </div>
@@ -260,9 +234,6 @@
     setInterval(function () {
       timeElapse(together);
     }, 1000);
-    // $('#messages').fadeIn(5000, function () {
-    //   // showLoveU();
-    // });
     function timeElapse(date) {
       var current = new Date();
       var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
@@ -289,7 +260,6 @@
   <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
   <!-- 音乐控制脚本 -->
   <script>
-    // document.getElementById('music').play()
     document.addEventListener("WeixinJSBridgeReady", function () {
       document.getElementById('music').play()
     }, false)

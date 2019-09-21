@@ -140,7 +140,7 @@ var preloader = new Preloader({
   perMinTime: 1000 // 加载每个资源所需的最小时间，一般用来测试 loading
 })
 preloader.addProgressListener(function(loaded, length) {
-  console.log('loaded', loaded, length, loaded / length)
+//   console.log('loaded', loaded, length, loaded / length)
 })
 preloader.addCompletionListener(function() {
   $('#o2_loading').remove()
