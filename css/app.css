@@ -1,12 +1,6 @@
-.ZhiMangXing {
-  font-family: 'ZhiMangXing';
-}
-.MaShanZheng {
-  font-family: 'Ma Shan Zheng', cursive;
-}
 @font-face {
-  font-family: 'ZhiMangXing';
-  src: url('../fonts/ZhiMangXing-Regular.ttf') format("opentype");
+  font-family: 'MaShanZheng';
+  src: url('../fonts/MaShanZheng-Regular.ttf') format('opentype');
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -196,6 +190,7 @@ html {
   font-size: 0.16rem;
 }
 .swiper-slide:first-child .tips {
+  font-family: 'MaShanZheng';
   width: 100%;
   position: absolute;
   bottom: 20%;
@@ -625,6 +620,7 @@ html {
 }
 .swiper-slide:nth-child(2) .bottom,
 .swiper-slide:nth-child(2) .top {
+  font-family: 'MaShanZheng';
   display: none;
   position: absolute;
   color: #fff;
@@ -695,6 +691,11 @@ html {
 .swiper-slide:nth-child(5) #mainDiv .signature {
   float: right;
   opacity: 0;
+}
+.swiper-slide:nth-child(5) #loveu,
+.swiper-slide:nth-child(5) #messages,
+.swiper-slide:nth-child(5) #elapseClock {
+  font-family: 'MaShanZheng';
 }
 .swiper-slide:nth-child(5) #loveu,
 .swiper-slide:nth-child(5) #messages {
