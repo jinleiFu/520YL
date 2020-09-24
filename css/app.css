@@ -742,7 +742,7 @@ html {
   position: absolute;
   width: 4rem;
   height: 4rem;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
