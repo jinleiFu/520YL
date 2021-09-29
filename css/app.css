@@ -701,16 +701,16 @@ html {
 .swiper-slide:nth-child(5) #messages {
   display: none;
 }
-.swiper-slide:nth-child(5) .wrap {
+.swiper-slide:nth-child(5) .cube-wrap {
   width: 4rem;
   height: 4rem;
-  margin: 5.33333rem auto 1.33333rem;
-  position: relative;
+  perspective: 2000px;
+  margin: 5.2rem auto 1.33333rem;
 }
 .swiper-slide:nth-child(5) .cube {
   width: 4rem;
   height: 4rem;
-  margin: 5.33333rem auto 1.33333rem;
+  position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: rotateX(-30deg) rotateY(-80deg);
